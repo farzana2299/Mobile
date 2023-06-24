@@ -1,0 +1,20 @@
+e cart
+------
+admin side
+-all products page
+-single productt view
+-add products
+-edit product
+-delete product
+
+-search
+-category
+
+Lazy Loading
+-------------
+It is atechnique used to avoid loading of the page due to heavy traffic.
+We use lazy loading in module, for that we have to create a module
+
+to create lazy loading- ng g module moduleName --route moduleName --module app.module
+
+to create normal module - ng g module moduleName / ng g module moduleName --rout(if we need routing)
