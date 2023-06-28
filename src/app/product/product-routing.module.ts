@@ -9,9 +9,9 @@ import { ViewComponent } from './view/view.component';
 
 const routes: Routes = [{ path: '', component: ViewAllComponent },
                         {path:'add',component:AddComponent},
-                        {path:'edit',component:EditComponent},
-                        {path:'delete',component:DeleteComponent},
-                        {path:'view',component:ViewComponent}];
+                        {path:'edit/:id',component:EditComponent},
+                        {path:'delete/:id',component:DeleteComponent},
+                        {path:'view/:id',component:ViewComponent}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

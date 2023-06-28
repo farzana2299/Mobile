@@ -18,3 +18,23 @@ We use lazy loading in module, for that we have to create a module
 to create lazy loading- ng g module moduleName --route moduleName --module app.module
 
 to create normal module - ng g module moduleName / ng g module moduleName --rout(if we need routing)
+
+
+for theme - start bootstrap
+
+to install json server - npm i --save json-server  (save for to save json server)
+
+To run json server - npx json-server --watch db.json --port 3000 
+        (It should run in data folder[src-asset-data])
+
+categories
+-----------
+cat1- iphone
+cat2 -samsung
+cat3-realme
+cat4-redmi
+cat5-vivo
+
+Activated Router class
+---------------------
+to activate bparams from url

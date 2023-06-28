@@ -8,6 +8,7 @@ import { ViewComponent } from './view/view.component';
 import { AddComponent } from './add/add.component';
 import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DeleteComponent } from './delete/delete.component';
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule
+    ProductRoutingModule,
+    HttpClientModule
   ]
 })
 export class ProductModule { }

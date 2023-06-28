@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-view',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class ViewComponent {
 
+pid: any;
+
+constructor(private ar:ActivatedRoute){}
+ngOnInit():void{
+  this.ar.params.subscribe((data:any)=>{
+    this.pid=data.id
+    console.log(this.pid);
+
+    
+  })
+}
 }

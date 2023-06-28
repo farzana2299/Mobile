@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './site-layout/header/header.component';
-import { FooterComponent } from './site-layout/footer/footer.component';
 import { SiteLayoutModule } from './site-layout/site-layout.module';
 
 @NgModule({
@@ -14,7 +12,8 @@ import { SiteLayoutModule } from './site-layout/site-layout.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SiteLayoutModule
+    SiteLayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
