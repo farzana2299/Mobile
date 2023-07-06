@@ -17,4 +17,19 @@ export class ProductService {
   {
     return this.http.get('http://localhost:3000/products/'+pid)
   }
+  // add product api 
+addProduct(productObject:any)
+{
+  return this.http.post('http://localhost:3000/products',productObject)
+}
+//api to update
+updateProduct(pid:any,productObject:any)
+{
+  return this.http.put('http://localhost:3000/products/'+pid,productObject)
+}
+//api for delete
+deleteProduct(pid:any)
+{
+  return this.http.delete('http://localhost:3000/products/'+pid)
+}
 }

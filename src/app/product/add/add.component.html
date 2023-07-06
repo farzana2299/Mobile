@@ -1,1 +1,98 @@
-<p>add works!</p>
+<h1 class="text-center">ADD PRODUCT</h1>
+<form [formGroup]="addForm" action="" class="w-50 container">
+    <div>
+        <input formControlName="pid" class="form-control container" type="text" id="p1" 
+        name="pid" placeholder="Product Id" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets and numbers only</p>
+    </div>
+    <div>
+        <input formControlName="pname" class="form-control container" type="text" id="p2" 
+        name="pname" placeholder="Product Name" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets only</p>
+    </div>
+    <div>
+        <input formControlName="cid" class="form-control container" type="text" id="p3" 
+        name="cid" placeholder="Category Id" required><br>   
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets and numbers only</p>
+    </div>
+    <div>
+        <input formControlName="price" class="form-control container" type="text" id="p4" 
+        name="price" placeholder="Price" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains numbers only</p>
+    </div>
+    <div>
+        <input formControlName="rating" class="form-control container" type="text" id="p5" 
+        name="rating" placeholder="Rating" ><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains numbers only</p>
+    </div>
+    <div>
+        <input formControlName="description" class="form-control container" type="text" id="p6" 
+        name="description" placeholder="Description" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets and special characters only</p>
+    </div>
+    <div>
+        <input formControlName="pImage" class="form-control container" type="text" id="p7" 
+        name="pImage" placeholder="product Image" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets and numbers only</p>
+    </div>
+    <div>
+        <input formControlName="review" class="form-control container" type="text" id="p8" 
+        name="review" placeholder="Review" ><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets only</p>
+    </div>
+    <div>
+        <input formControlName="warrenty" class="form-control container" type="text" id="p9" 
+        name="warrenty" placeholder="Warrenty" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets and numbers only</p>
+    </div>
+    <div>
+        <input formControlName="availability" class="form-control container" type="text" id="p10"
+         name="availability" placeholder="Availability" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets only</p>
+    </div>
+    <div>
+        <input formControlName="storage" class="form-control container" type="text" id="p11" 
+        name="storage" placeholder="Storage" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets only</p>
+    </div>
+    <div>
+        <input formControlName="ram" class="form-control container" type="text" id="p12" 
+        name="ram" placeholder="Ram" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains numbers only</p>
+    </div>
+    <div>
+        <input formControlName="processor" class="form-control container" type="text" id="p13" 
+        name="processor" placeholder="Processor" required><br>
+    </div>
+    <div *ngIf="(this.addForm.get('acno')?.errors)&&(this.addForm.get('acno')?.touched)">
+        <p class="text-danger">Must contains alphabets only</p>
+    </div>
+    <div class="p-2 mt-2 text-center">
+        <button (click)="add()" type="submit" class="btn btn-danger mt-4 mb-4">Add Item</button>
+    </div>
+</form> 
+

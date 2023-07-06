@@ -1,1 +1,69 @@
-<p>edit works!</p>
+<h1 class="text-center">EDIT PRODUCT</h1>
+<form action="" (ngSubmit)="editProduct()" class="w-50 container">
+    
+    <div>
+        <input [(ngModel)]="pdata.productName" class="form-control container" type="text" id="p2" 
+        name="pname" placeholder="Product Name" required><br>
+    </div>
+   
+    <div>
+        <input [(ngModel)]="pdata.categoryId" class="form-control container" type="text" id="p3" 
+        name="cid" placeholder="Category Id" required><br>   
+    </div>
+   
+    <div>
+        <input [(ngModel)]="pdata.price" class="form-control container" type="text" id="p4" 
+        name="price" placeholder="Price" required><br>
+    </div>
+    
+    <div>
+        <input [(ngModel)]="pdata.rating" class="form-control container" type="text" id="p5" 
+        name="rating" placeholder="Rating" ><br>
+    </div>
+   
+    <div>
+        <input [(ngModel)]="pdata.description" class="form-control container" type="text" id="p6" 
+        name="description" placeholder="Description" required><br>
+    </div>
+   
+    <div>
+        <input [(ngModel)]="pdata.productImage" class="form-control container" type="text" id="p7" 
+        name="pImage" placeholder="product Image" required><br>
+    </div>
+    
+    <div>
+        <input [(ngModel)]="pdata.review" class="form-control container" type="text" id="p8" 
+        name="review" placeholder="Review" ><br>
+    </div>
+    
+    <div>
+        <input [(ngModel)]="pdata.warrenty" class="form-control container" type="text" id="p9" 
+        name="warrenty" placeholder="Warrenty" required><br>
+    </div>
+   
+    <div>
+        <input [(ngModel)]="pdata.is_available" class="form-control container" type="text" id="p10"
+         name="availability" placeholder="Availability" required><br>
+    </div>
+    
+    <div>
+        <input [(ngModel)]="pdata.storage" class="form-control container" type="text" id="p11" 
+        name="storage" placeholder="Storage" required><br>
+    </div>
+   
+    <div>
+        <input [(ngModel)]="pdata.ram" class="form-control container" type="text" id="p12" 
+        name="ram" placeholder="Ram" required><br>
+    </div>
+   
+    <div>
+        <input [(ngModel)]="pdata.processor" class="form-control container" type="text" id="p13" 
+        name="processor" placeholder="Processor" required><br>
+    </div>
+   
+    <div class="p-2 mt-2 text-center">
+        <button type="submit" class="btn btn-primary mt-4 mb-4">SAVE</button>
+    </div>
+</form> 
+
+
