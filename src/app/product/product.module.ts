@@ -10,6 +10,7 @@ import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchPipe } from './productPipe/search.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ViewComponent,
     AddComponent,
     EditComponent,
-    DeleteComponent
+    DeleteComponent,
+    SearchPipe
   ],
   imports: [
     CommonModule,

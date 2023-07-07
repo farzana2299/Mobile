@@ -38,3 +38,13 @@ cat5-vivo
 Activated Router class
 ---------------------
 to activate bparams from url
+
+Behaviour Subject(BS)
+------------------
+concept used to to communicate betwween two modules and to convert data into streams
+rxjs-Reactive Extension for js (used for behaviour subject)
+ithere is a inbuild class for in behavior subject. We have to create a object. data store in object.
+it is asynchronious method so we have to use subscribe for access o/p.
+
+here we have to create object in product service file.
+

@@ -1,7 +1,47 @@
+
 <section class="py-5">
+    <div class="row">
+        <div (click)="categoryProduct('')" class="col-2">
+            <a style="text-decoration: none; color: black;" href="">
+                <img style="height: 200px;width: 150px;position: relative; left: 40px;" class="i1" src="https://i.postimg.cc/tC8gn6V4/images.jpg" alt="">
+            <h4 class="text-center mt-3">All
+            </h4></a>
+        </div>
+            <div (click)="categoryProduct(1)" class="col-2 card-body">
+                <a style="text-decoration: none; color: black;" href="">
+                    <img style="height: 200px;width: 150px;position: relative; left: 40px;background-repeat: no-repeat;background-size: 100%;"  src="https://i.postimg.cc/NFVhK1F8/download-3.jpg" alt="">
+                <h4 class="text-center mt-3">Iphone
+                </h4></a>
+            </div>
+        <div (click)="categoryProduct(2)" class="col-2">
+            <a style="text-decoration: none; color: black;" href="">
+                <img style="height: 200px;width: 150px;position: relative; left: 40px;" class="i1" src="https://i.postimg.cc/7LFrP1Cg/download-4.jpg" alt="">
+            <h4 class="text-center mt-3">Samsung
+            </h4></a>
+        </div>
+        <div (click)="categoryProduct(3)" class="col-2">
+            <a style="text-decoration: none; color: black;" href="">
+                <img style="height: 200px;width: 150px;position: relative; left: 40px;" class="i1" src="https://i.postimg.cc/nc0nqwS2/download-5.jpg" alt="">
+            <h4 class="text-center mt-3">Realme
+            </h4></a>
+        </div>
+        <div (click)="categoryProduct(4)" class="col-2">
+            <a style="text-decoration: none; color: black;" href="">
+                <img style="height: 200px;width: 150px;position: relative; left: 40px;" class="i1" src="https://i.postimg.cc/3Nxch9jr/download-6.jpg" alt="">
+            <h4 class="text-center mt-3">Redmi
+            </h4></a>
+        </div>
+        <div (click)="categoryProduct(5)" class="col-2">
+            <a style="text-decoration: none; color: black;" href="">
+                <img style="height: 200px;width: 150px;position: relative; left: 40px;" class="i1" src="https://i.postimg.cc/KzzPvWWW/download-7.jpg" alt="">
+            <h4 class="text-center mt-3">Vivo
+            </h4></a>
+        </div>
+    </div>
+ 
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            <div *ngFor="let i of productsArray" class="col mb-5">
+            <div *ngFor="let i of categoryArray | search:searchString:'productName'" class="col mb-5">
                 <div class="card h-100">
                     <!-- Product image-->
                     <img style="height: 400px;" class="card-img-top" src={{i.productImage}} alt="..." />
@@ -30,4 +70,6 @@
            
         </div>
     </div>
+
+    
 </section>

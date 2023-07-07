@@ -8,6 +8,9 @@ import { ProductService } from '../service/product.service';
 })
 export class ViewAllComponent {
   productsArray:any=[]
+  categoryArray:any=[]
+  searchString:any=[]
+
   constructor(private ps:ProductService) {
 
   }
@@ -16,7 +19,19 @@ export class ViewAllComponent {
   this.ps.getAllProduct().subscribe((result:any)=>{
     this.productsArray=result
     console.log(this.productsArray);
+    this.categoryArray=this.productsArray
+
+    this.ps.search.subscribe((value:any)=>{
+      this.searchString=value
+    })
     
   })
+}
+categoryProduct(catId:any)
+{
+  this.categoryArray=this.productsArray.filter((item:any)=>
+  item.categoryId==catId||catId=="")
+  console.log(this.categoryArray);
+  
 }
 }
